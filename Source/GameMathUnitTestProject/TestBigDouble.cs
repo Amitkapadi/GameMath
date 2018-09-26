@@ -18,7 +18,7 @@ public class TestBigDouble
         Assert.AreEqual(123.4, bd2.RealValue, 0.01);
 
         BigDouble bd3 = -bd2;
-        Assert.AreEqual(-123.4, bd2.RealValue, 0.01);
+        Assert.AreEqual(-123.4, bd3.RealValue, 0.02);
 
         BigDouble bd4 = new BigDouble(12.34E+30);
         Assert.AreEqual(0.1234, bd4.Value, 0.01);
