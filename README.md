@@ -16,7 +16,7 @@ The GameMathLib exposes these classes:
     /// </summary>
     public class BigDouble
     
-        /// <summary>
+    /// <summary>
     /// A standard double has a max of ~1.79 E+308, so only 308 zeros.
     /// 
     /// BiggerDouble is float point number, but can handle a 256 bit number of 0s
@@ -31,6 +31,6 @@ The GameMathLib exposes these classes:
     public class BiggerDouble
        
     /// <summary>
-    ///     Represents a 256-bit signed integer.
+    /// Represents a 256-bit signed integer.
     /// </summary>
     public struct Int256 : IComparable<Int256>, IComparable, IEquatable<Int256>, IFormattable
