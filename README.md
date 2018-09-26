@@ -23,7 +23,7 @@ The GameMathLib exposes these:
     /// this means 1.15e+77 is max # of 0s.
     /// To be precise this is 115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,639,936 
     /// 
-    /// BigDouble is defined as [Value * 10 ^ Exp]
+    /// BiggerDouble is defined as [Value * 10 ^ Exp]
     /// where Value is a 64-bit double which has 53 bits of fraction 
     /// for ≈15.95 decimal digits of precision
     /// while Exp is a 256bit Int256 which stores the # of 0s
