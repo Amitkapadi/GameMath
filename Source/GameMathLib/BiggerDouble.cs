@@ -22,17 +22,15 @@ namespace GameMath
     /// for ≈15.95 decimal digits of precision
     /// while Exp is a 256bit Int256 which stores the # of 0s
     /// </summary>
-    public class BiggerDouble
+    public struct BiggerDouble
     {
         public double Value;
         public Int256 Exp; 
 
-        public BiggerDouble()
-        {
-        }
-
         public BiggerDouble(double d)
         {
+            Value = 0;
+            Exp = 0;
             ConvertFromDouble(d);
         }
 
@@ -42,6 +40,7 @@ namespace GameMath
 
         public BiggerDouble(bool value) 
         {
+            this.Exp = 0;
             this.Value = value ? 1 : 0;
         }
 

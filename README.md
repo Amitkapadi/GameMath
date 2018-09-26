@@ -1,7 +1,7 @@
 # GameMath
 Some C# classes for big numbers as seen in popular idle games
 
-The GameMathLib exposes these classes:
+The GameMathLib exposes these:
 
     /// <summary>
     /// A standard double has a max of ~1.79 E+308, so only 308 zeros.
@@ -14,7 +14,7 @@ The GameMathLib exposes these classes:
     /// for ≈15.95 decimal digits of precision
     /// while Exp is a 64bit ulong which stores the # of 0s
     /// </summary>
-    public class BigDouble
+    public struct BigDouble
     
     /// <summary>
     /// A standard double has a max of ~1.79 E+308, so only 308 zeros.
@@ -28,7 +28,7 @@ The GameMathLib exposes these classes:
     /// for ≈15.95 decimal digits of precision
     /// while Exp is a 256bit Int256 which stores the # of 0s
     /// </summary>
-    public class BiggerDouble
+    public struct BiggerDouble
        
     /// <summary>
     /// Represents a 256-bit signed integer.

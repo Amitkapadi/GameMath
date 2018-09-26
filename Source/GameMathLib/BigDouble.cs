@@ -21,17 +21,15 @@ namespace GameMath
     /// for ≈15.95 decimal digits of precision
     /// while Exp is a 64bit ulong which stores the # of 0s
     /// </summary>
-    public class BigDouble
+    public struct BigDouble
     {
         public double Value;
         public ulong Exp; // 18,446,744,073,709,551,615 is max # of 0s
 
-        public BigDouble()
-        {
-        }
-
         public BigDouble(double d)
         {
+            Value = 0;
+            Exp = 0;
             ConvertFromDouble(d);
         }
 
@@ -41,6 +39,7 @@ namespace GameMath
 
         public BigDouble(bool value) 
         {
+            this.Exp = 0;
             this.Value = value ? 1 : 0;
         }
 
